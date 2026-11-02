@@ -1,0 +1,35 @@
+name: outage-logger
+
+on:
+  schedule:
+    - cron: "7 */2 * * *"     # every 2 hours (UTC); each job runs until the next one takes over
+  workflow_dispatch:           # adds a "Run workflow" button
+
+permissions:
+  contents: write
+
+concurrency:
+  group: outage-logger
+  cancel-in-progress: false    # the next job waits for the running one, so there are no gaps
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    timeout-minutes: 170
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: .github   # only the scripts, never the growing data folder
+
+      - name: Log outage feeds
+        run: python3 run_logger.py
+
+      - name: Keep any batches that could not be pushed
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unpushed-${{ github.run_id }}
+          path: unpushed/
+          if-no-files-found: ignore
+          retention-days: 30
