@@ -1,13 +1,13 @@
 {
   "sources": {
     "npg_live_power_cuts": {
-      "last_try_utc": "2026-11-10T22:25:20.000124+00:00",
+      "last_try_utc": "2026-11-10T22:30:01.000155+00:00",
       "ok": true,
       "http": 200,
-      "bytes": 450313,
+      "bytes": 450265,
       "rows": 354,
-      "live_unplanned_incidents": 7,
-      "customers_off_confirmed_plus_predicted": 546
+      "live_unplanned_incidents": 6,
+      "customers_off_confirmed_plus_predicted": 517
     },
     "nged_live_power_cuts": {
       "last_try_utc": "2026-11-10T22:20:20.000125+00:00",
@@ -40,5 +40,5 @@
       "bytes": 499705
     }
   },
-  "updated_utc": "2026-11-10T22:25:21.545148+00:00"
+  "updated_utc": "2026-11-10T22:30:03.262083+00:00"
 }
