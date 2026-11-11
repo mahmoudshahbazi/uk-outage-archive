@@ -1,10 +1,10 @@
 {
   "sources": {
     "npg_live_power_cuts": {
-      "last_try_utc": "2026-11-11T02:20:20.000107+00:00",
+      "last_try_utc": "2026-11-11T02:30:01.000080+00:00",
       "ok": true,
       "http": 200,
-      "bytes": 298911,
+      "bytes": 298865,
       "rows": 249,
       "live_unplanned_incidents": 3,
       "customers_off_confirmed_plus_predicted": 521
@@ -40,5 +40,5 @@
       "bytes": 503635
     }
   },
-  "updated_utc": "2026-11-11T02:20:22.815565+00:00"
+  "updated_utc": "2026-11-11T02:30:02.133119+00:00"
 }
