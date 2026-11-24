@@ -1,31 +1,31 @@
 {
   "sources": {
     "npg_live_power_cuts": {
-      "last_try_utc": "2026-11-24T06:20:20.000187+00:00",
+      "last_try_utc": "2026-11-24T06:30:01.000097+00:00",
       "ok": true,
       "http": 200,
-      "bytes": 307070,
+      "bytes": 307004,
       "rows": 257,
       "live_unplanned_incidents": 8,
       "customers_off_confirmed_plus_predicted": 231
     },
     "nged_live_power_cuts": {
-      "last_try_utc": "2026-11-24T06:15:20.000339+00:00",
+      "last_try_utc": "2026-11-24T06:30:01.000097+00:00",
       "ok": true,
       "http": 200,
-      "bytes": 2748
+      "bytes": 2750
     },
     "nged_live_detailed_power_cuts": {
-      "last_try_utc": "2026-11-24T06:15:20.000339+00:00",
+      "last_try_utc": "2026-11-24T06:30:01.000097+00:00",
       "ok": true,
       "http": 200,
-      "bytes": 3481
+      "bytes": 2901
     },
     "ukpn_live_faults": {
-      "last_try_utc": "2026-11-24T06:15:20.000339+00:00",
+      "last_try_utc": "2026-11-24T06:30:01.000097+00:00",
       "ok": true,
       "http": 200,
-      "bytes": 216216
+      "bytes": 217796
     },
     "metoffice_warnings_uk": {
       "last_try_utc": "2026-11-24T06:15:20.000339+00:00",
@@ -40,5 +40,5 @@
       "bytes": 506992
     }
   },
-  "updated_utc": "2026-11-24T06:20:21.174918+00:00"
+  "updated_utc": "2026-11-24T06:30:04.608671+00:00"
 }
